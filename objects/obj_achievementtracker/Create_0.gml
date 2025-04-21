@@ -6,7 +6,7 @@ if instance_number(object_index) > 1
 
 #region Steam Achievement Map
 
-global.steam_achievements = ds_map_create();
+/*global.steam_achievements = ds_map_create();
 ds_map_set(global.steam_achievements, "entrance1", "ACH_ENTRANCE_1");
 ds_map_set(global.steam_achievements, "entrance2", "ACH_ENTRANCE_2");
 ds_map_set(global.steam_achievements, "entrance3", "ACH_ENTRANCE_3");
@@ -82,7 +82,7 @@ ds_map_set(global.steam_achievements, "pranks5", "ACH_PRANK_5");
 
 ds_map_set(global.steam_achievements, "halloween1", "ACH_HALLOWEEN_1");
 ds_map_set(global.steam_achievements, "halloween2", "ACH_HALLOWEEN_2");
-
+*/
 #endregion
 
 achievements_update = [];

@@ -124,7 +124,7 @@ add_option_press(video_menu, 0, "option_back", function()
 	menu_goto(menu_pages.options);
 });
 
-if !steam_utils_is_steam_running_on_steam_deck()
+/* if !steam_utils_is_steam_running_on_steam_deck()
 {
 	add_option_press(video_menu, 1, "option_window_mode", function()
 	{
@@ -146,7 +146,7 @@ if !steam_utils_is_steam_running_on_steam_deck()
 		global.option_resolution = val;
 		screen_apply_size();
 	}).value = global.option_resolution;
-}
+}*/
 
 add_option_toggle(video_menu, 3, "option_vsync", function(val)
 {

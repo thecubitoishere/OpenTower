@@ -197,7 +197,7 @@ function achievement_unlock(_name, _display_name, _sprite, _index = 0)
 			ds_queue_enqueue(obj_achievementtracker.unlock_queue, [_sprite, _index]);
 		}
 	}
-	scr_steam_unlock_achievement(_name);
+	//scr_steam_unlock_achievement(_name);
 	
 	// moved to separate function
 	/*
@@ -220,7 +220,7 @@ function achievement_unlock(_name, _display_name, _sprite, _index = 0)
 	with obj_achievementviewer
 		event_perform(ev_other, ev_room_start);
 }
-function scr_steam_unlock_achievement(_achievement)
+/*function scr_steam_unlock_achievement(_achievement)
 {
 	if global.steam_api
 	{
@@ -237,6 +237,7 @@ function scr_steam_unlock_achievement(_achievement)
 	else
 		trace("Steam API not initialized!");
 }
+*/
 function palette_unlock(_achievement, _palettename, _paletteselect, _texture = noone, peppino = true)
 {
 	ini_open_from_string(obj_savesystem.ini_str_options);
@@ -308,7 +309,7 @@ function achievement_save_variables(achievement_array)
 		obj_savesystem.ini_str = ini_close();
 	}
 }
-function achievement_get_steam_achievements(achievement_array)
+/*function achievement_get_steam_achievements(achievement_array)
 {
 	for (var i = 0; i < array_length(achievement_array); i++)
 	{
@@ -321,7 +322,7 @@ function achievement_get_steam_achievements(achievement_array)
 		}
 		obj_savesystem.ini_str = ini_close();
 	}
-}
+}*/
 function achievements_load(achievement_array)
 {
 	for (var i = 0; i < array_length(achievement_array); i++)
